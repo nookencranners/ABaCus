@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://s2vwdgg5yktv"]
+
+[ext_resource type="PackedScene" uid="uid://b06iflc3uvxk1" path="res://scenes/blocks/block_1_one_unit.tscn" id="1_ddwt1"]
+[ext_resource type="Texture2D" uid="uid://cdpi0fvdrgwnx" path="res://assets/BLOCKS_HUNDRED_100.png" id="2_ndjvq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ritus"]
+size = Vector2(472, 472)
+
+[node name="Block100HundredUnit" unique_id=1127657636 instance=ExtResource("1_ddwt1")]
+unit_val = 100
+
+[node name="BlockCollision" parent="." index="0" unique_id=398573458]
+shape = SubResource("RectangleShape2D_ritus")
+
+[node name="BlockSprite" parent="." index="1" unique_id=982503133]
+texture = ExtResource("2_ndjvq")

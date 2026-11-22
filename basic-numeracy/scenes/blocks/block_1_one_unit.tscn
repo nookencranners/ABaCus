@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b06iflc3uvxk1"]
+
+[ext_resource type="Script" uid="uid://ydtbr3a7pqe6" path="res://scripts/BlockGroup.gd" id="1_ai82y"]
+[ext_resource type="Texture2D" uid="uid://dhwtep0c851yf" path="res://assets/BLOCKS_ONE_1.png" id="2_4u3li"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_46ms3"]
+size = Vector2(40, 40)
+
+[node name="Block1OneUnit" type="Area2D" unique_id=1127657636]
+script = ExtResource("1_ai82y")
+
+[node name="BlockCollision" type="CollisionShape2D" parent="." unique_id=398573458]
+shape = SubResource("RectangleShape2D_46ms3")
+
+[node name="BlockSprite" type="Sprite2D" parent="." unique_id=982503133]
+scale = Vector2(3, 3)
+texture = ExtResource("2_4u3li")

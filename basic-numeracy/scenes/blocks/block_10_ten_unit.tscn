@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ofaxgu2p05mn"]
+
+[ext_resource type="PackedScene" uid="uid://b06iflc3uvxk1" path="res://scenes/blocks/block_1_one_unit.tscn" id="1_ritus"]
+[ext_resource type="Texture2D" uid="uid://b8jrxc866jrtn" path="res://assets/BLOCKS_TEN_10_HORIZONTAL.png" id="2_b2pc6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ai82y"]
+size = Vector2(471.8, 39.8)
+
+[node name="Block10TenUnit" unique_id=1127657636 instance=ExtResource("1_ritus")]
+unit_val = 10
+
+[node name="BlockColission" parent="." index="0" unique_id=398573458]
+position = Vector2(0.099998474, -0.099999905)
+shape = SubResource("RectangleShape2D_ai82y")
+
+[node name="BlockSprite" parent="." index="1" unique_id=982503133]
+texture = ExtResource("2_b2pc6")
