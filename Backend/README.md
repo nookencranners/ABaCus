@@ -1,0 +1,1 @@
+This is where the Java application service lies along with some REST APIs
