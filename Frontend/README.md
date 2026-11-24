@@ -16,3 +16,12 @@ The React Compiler is not enabled on this template because of its impact on dev 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 # Woohoo Vite
+
+*** ATTENTION ABaCus Project Group Members ***
+
+To run the dev build using vite:
+
+1. Make sure the address your terminal is running on is ending ".../ABaCus/Frontend" first.
+2. Run the script "npm install".
+3. Run the script "npm run dev".
+4. Click on the link given under "Local:" in the terminal.
