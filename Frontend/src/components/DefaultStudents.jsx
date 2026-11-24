@@ -5,7 +5,7 @@ const DefaultStudents = [
     age: 8,
     email: "alibaba@ymail.com",
     password: "password123",
-    classId: 1
+  
   }
 ];
 
