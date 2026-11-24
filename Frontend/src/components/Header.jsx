@@ -1,8 +1,9 @@
 const Header = () => {
   return (
-    <div>
-      {import.meta.env.VITE_API_URL}
-      Yellow Bread.
+    <div className="Header">
+      <div>{import.meta.env.VITE_API_URL}</div>
+      This is the Header
+      <div>Yellow Bread.</div>
     </div>
   )
 }

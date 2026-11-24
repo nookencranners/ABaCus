@@ -25,3 +25,8 @@ To run the dev build using vite:
 2. Run the script "npm install".
 3. Run the script "npm run dev".
 4. Click on the link given under "Local:" in the terminal.
+
+*** FILE STRUCTURE ***
+
+1. Each page must have its own file (e.g. LoginPage, RegisterPage, TeacherDashboard).
+2. To make things easier, use components for each jumble of connected functions.

@@ -19,3 +19,4 @@ To run the dev build using vite:
 2. Run the script "npm install".
 3. Run the script "npm run dev".
 4. Click on the link given under "Local:" in the terminal.
+5. For more instructions, go to the associated folder (e.g. Frontend, Backend, Database) and go to the README.md files in those folders.
