@@ -5,7 +5,6 @@ const TeacherDashboard = ({ setViewingDashboard }) => {
       <div className="teacherDash">
         <div className="teacherDashBox">Classes</div>
         <div className="teacherDashBox">Students</div>
-        <div className="teacherDashBox">Activities</div>
       </div>
       <button onClick={() => {
           setViewingDashboard(false);
