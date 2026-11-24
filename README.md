@@ -9,3 +9,13 @@
 ## Branching & Contributions
 - Create a feature branch from `main` (e.g., `feat/student-accessibility`)
 - Open a Pull Request and get teammate review before merging into `main`
+
+
+*** ATTENTION ABaCus Project Group Members ***
+
+To run the dev build using vite:
+
+1. Make sure the address your terminal is running on is ending ".../ABaCus/Frontend" first.
+2. Run the script "npm install".
+3. Run the script "npm run dev".
+4. Click on the link given under "Local:" in the terminal.
