@@ -3,19 +3,20 @@ const HomePage = ({ setIsSigning, setIsLogging, setViewingDashboard }) => {
     <div>
       HomePage
       <div className="PageButtons">
-        <button onClick={() => {
-            setIsSigning(true);
-            setIsLogging(true);
-          }}>
-          Login
-        </button>
-        <button onClick={() => {
-            setIsSigning(true);
-            setIsLogging(false);
-          }}>
-          Register
-        </button>
-        <br/>
+        <div className="AuthButtons">
+          <button onClick={() => {
+              setIsSigning(true);
+              setIsLogging(true);
+            }}>
+            Login
+          </button>
+          <button onClick={() => {
+              setIsSigning(true);
+              setIsLogging(false);
+            }}>
+            Register
+          </button>
+        </div>
         <button onClick={() => {
             setViewingDashboard(true)
           }}>
