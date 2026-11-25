@@ -193,22 +193,25 @@
 
 .teacherDash {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   padding: 16px;
 }
 
 .teacherDashBox {
   display: grid;
-  min-height: 120px;
+  min-height: 10pc;
   place-items: center;
   border: 1px solid rgb(100 100 200);
   border-radius: 8px;
   padding: 16px;
+  overflow-y: scroll;
 }
 
-@media (max-width: 640px) {
-  .teacherDash {
-    grid-template-columns: 1fr;
-  }
+.PageButtons {
+  display: grid;
+}
+
+button {
+  max-width: 100;
 }
