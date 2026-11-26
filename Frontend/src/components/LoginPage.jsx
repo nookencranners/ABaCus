@@ -1,7 +1,7 @@
 const LoginPage = ({ setIsSigning, setIsLogging }) => {
   return (
     <>
-      <div>LoginPage
+      <div style={{backgroundColor: "lightblue"}}>LoginPage
         <div className="PageButtons">
           <div className="AuthButtons">
             <button onClick={() => {
