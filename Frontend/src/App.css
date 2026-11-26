@@ -208,7 +208,8 @@
   overflow-y: scroll;
 }
 
-.teacherList{
+
+.classList{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -217,6 +218,28 @@
   overflow-y: auto;
   padding: 2rem 2rem 2rem 2rem;
   gap: 2rem;
+}
+
+.classContainer{
+  background-color: darkslateblue;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.studentList{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  overflow-x: scroll;
+  padding: 2rem 2rem 2rem 2rem;
+  gap: 0.5rem;
+}
+
+.studentContainer{
+  background-color: darkslateblue;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 
 .PageButtons {

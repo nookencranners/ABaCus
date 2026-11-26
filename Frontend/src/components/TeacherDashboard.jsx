@@ -10,9 +10,9 @@ const TeacherDashboard = ({ setViewingDashboard }) => {
 
         <div className="teacherDashBox">
           Classes
-          <ul className="teacherList">
+          <ul className="classList">
             {DefaultClasses.map((classItem) => (
-              <li>
+              <li className="classContainer">
                 <div>
                   {classItem.classId}
                 </div>
@@ -26,10 +26,18 @@ const TeacherDashboard = ({ setViewingDashboard }) => {
 
         <div className="teacherDashBox">
           Students
-          <ul className="teacherList">
+            <ul className="studentList">
             {DefaultStudents.map((studentItem) => (
-              <li>
-                {studentItem.studentId}
+              <li className="studentContainer">
+                <div>
+                  {studentItem.studentId}
+                </div>
+                <div>
+                  {studentItem.name}
+                </div>
+                <div>
+                   Age: {studentItem.age}
+                </div>
               </li>
             ))}
           </ul>

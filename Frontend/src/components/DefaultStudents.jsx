@@ -38,6 +38,14 @@ const DefaultStudents = [
     age: 11,
     email: "aniq@ymail.com",
     password: "anipass",
+  },
+  {
+    userId: 8,
+    studentId: 6,
+    name: "ammar",
+    age: 6,
+    email: "ammarzzz@ymail.com",
+    password: "deeznuts",
   }
 ];
 
