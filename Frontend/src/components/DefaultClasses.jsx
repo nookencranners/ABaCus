@@ -4,7 +4,8 @@ const DefaultClasses = [
     className: "That class",
     joinCode: "123code321",
     students: []
-  }
+  },
+  
 ];
 
 export default DefaultClasses;
