@@ -22,7 +22,7 @@ const LoginPage = ({ setIsSigning, setIsLogging, setUserRole, userRole }) => {
                     Student
                   </button>
                   <button onClick={() => {
-                    
+                    setUserRole(2);
                   }}>
                     Teacher
                   </button>
