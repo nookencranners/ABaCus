@@ -1,48 +1,55 @@
-const LoginPage = ({ setIsSigning, setIsLogging }) => {
+const LoginPage = ({ setIsSigning, setIsLogging, setUserRole, userRole }) => {
   return (
     <>
-      <div style={{
-          backgroundColor: "lightblue", margin: "1em auto", width: "40%"
+      { userRole == 0(
+        <div style={{
+            backgroundColor: "lightblue", margin: "1em auto", width: "40%"
         }}>LoginPage
-        <div className="PageButtons">
-          <div className="AuthButtons" style={{
-            
-          }}>
-            <ul style={{
-              listStyleType: "none", margin: "0", padding: "0"
+          <div className="PageButtons">
+            <div className="AuthButtons" style={{
+              
             }}>
-              <div style={{
-                backgroundColor: "red"
+              <ul style={{
+                listStyleType: "none", margin: "0", padding: "0"
               }}>
-                <button onClick={() => {
-
+                <div style={{
+                  backgroundColor: "red"
                 }}>
-                  Student
-                </button>
+                  <button onClick={() => {
+                    setUserRole(1);
+                  }}>
+                    Student
+                  </button>
+                  <button onClick={() => {
+                    
+                  }}>
+                    Teacher
+                  </button>
+                </div>
+                <div>
+                  <button onClick={() => {
+                      setIsSigning(true);
+                      setIsLogging(false);
+                    }}>
+                    Register Instead
+                  </button>
+                </div>
                 <button onClick={() => {
-                  
-                }}>
-                  Teacher
-                </button>
-              </div>
-              <div>
-                <button onClick={() => {
-                    setIsSigning(true);
+                    setIsSigning(false);
                     setIsLogging(false);
                   }}>
-                  Register Instead
+                  Return to Home Page
                 </button>
-              </div>
-              <button onClick={() => {
-                  setIsSigning(false);
-                  setIsLogging(false);
-                }}>
-                Return to Home Page
-              </button>
-            </ul>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+      ) ? userRole == 1 (
+        <div>Hi</div>
+      ) : (
+        <div>Mornin</div>
+      )}
+      
     </>
   )
 }

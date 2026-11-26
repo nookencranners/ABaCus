@@ -1,4 +1,4 @@
-const HomePage = ({ setIsSigning, setIsLogging, setViewingDashboard }) => {
+const HomePage = ({ setIsSigning, setIsLogging, setViewingDashboard, setUserRole, userRole }) => {
   return (
     <div>
       HomePage
@@ -7,6 +7,8 @@ const HomePage = ({ setIsSigning, setIsLogging, setViewingDashboard }) => {
           <button onClick={() => {
               setIsSigning(true);
               setIsLogging(true);
+              setUserRole(0);
+              // userRole(0);
             }}>
             Login
           </button>
