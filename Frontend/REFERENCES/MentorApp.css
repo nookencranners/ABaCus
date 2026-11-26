@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%; 
+  max-width: 5000px;
+  border: 1px solid mediumblue;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  padding: 2rem 0.25em;
+  background-color: royalblue;
+  color: aliceblue;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  place-content: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+  padding: 0.25em;
+  background-color: royalblue;
+  color: aliceblue;
+  display: grid;
+  place-content: end center;
+  align-self: end;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  overflow-y: auto;
+  padding: 2rem 2rem 2rem 2rem;
+  gap: 2rem;
+}
+
+li {
+  width: 15rem;
+}
+
+.item {
+  display: grid;
+  background-color: #dfe6f5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.itemYou {
+  display: grid;
+  background-color: #acc3f5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.item input[type="checkbox"] {
+  margin: 0;
+  justify-self: center;
+  text-align: center;
+  width: 1rem;
+  min-width: 24px;
+  height: 1rem;
+  min-height: 24px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+
+.item h1{
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #c2cce7;
+  width: 12rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.itemYou h1{
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #88a5e4;
+  width: 12rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+.itemYou img,
+.item img {
+  justify-self: center;
+  align-self: center;
+  width: 12rem;
+  min-width: 200px;
+  height: 12rem;
+  min-height: 200px;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  margin: 1rem 0 0 0;
+}
+
+.itemYou main,
+.item main {
+  display: block;
+  justify-self: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+  width: 12rem;
+  scrollbar-width: none;
+}
+
+.itemYou div,
+.item div {
+  padding-bottom: 2px;
+  font-size: medium;
+}
+
+.itemYou label,
+.item label {
+  display: block;
+  width: 14rem;
+  min-width: 250px;
+  font-weight: bold;
+  margin-bottom: 6px
+}
+
+.itemDetail {
+  text-align: justify;
+}
+
+.student-directory {
+  flex: 0 0 auto;
+  padding: 0rem;
+}
+
+.registerStudentButton {
+  background-color: royalblue;
+  color: white;
+}
+
+.searchAndRegister {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.registrationPage {
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 640px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.registrationForm h1 {
+  font-size: 1.5rem;
+}
+
+.registrationForm p {
+  margin-bottom: 0.5rem;
+}
+
+.registrationForm label {
+  font-weight: bold;
+}
+
+.registrationForm input{
+  width: 100%;
+  min-height: 48px;
+  padding: 0.5rem;
+  border: 1px solid #999;
+  border-radius: 0.25rem;
+  font: inherit;
+}
+
+.registrationForm textarea {
+  resize: vertical;
+  width: 100%;
+  min-height: 48px;
+  padding: 0.5rem;
+  border: 1px solid #999;
+  border-radius: 0.25rem;
+  font: inherit;
+}
+
+.registrationActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.registrationActions button[type='submit'] {
+  background-color: royalblue;
+  color: white;
+}
+
+button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: mediumblue;
+  cursor: pointer;
+}
+
+button:focus-visible,
+button:hover {
+  color: white;
+  background-color: limegreen;
+}
+
+.searchForm {
+  flex: 0 0 auto;
+  min-width: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.25rem 0 0;
+  padding: 0 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.searchAndRegister .searchForm {
+  flex: 1;
+  width: auto;
+  padding: 0 0 0;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type='text'] {
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
