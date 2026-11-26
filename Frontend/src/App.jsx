@@ -13,13 +13,12 @@ function App() {
   const [isSigning, setIsSigning] = useState(false);
   const [isLogging, setIsLogging] = useState(false);
   const [isViewingDashboard, setViewingDashboard] = useState(false);
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   const [userRole, setUserRole] = useState(0);
 
   return (
     <>
       <Header/>
-      
       {isSigning ? (
         <>
           {isLogging ? (
@@ -27,6 +26,7 @@ function App() {
               setIsSigning={setIsSigning}
               setIsLogging={setIsLogging}
               setUserRole={setUserRole}
+              userRole={userRole}
             />
           ) : (
             <RegisterPage
@@ -48,6 +48,7 @@ function App() {
             setIsLogging={setIsLogging}
             setViewingDashboard={setViewingDashboard}
             setUserRole={setUserRole}
+            userRole={userRole}
           />
         </>
       )}

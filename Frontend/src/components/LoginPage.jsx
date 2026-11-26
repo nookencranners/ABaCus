@@ -1,7 +1,8 @@
 const LoginPage = ({ setIsSigning, setIsLogging, setUserRole, userRole }) => {
+
   return (
-    <>
-      { userRole == 0(
+    userRole === 0 ? (
+      <>
         <div style={{
             backgroundColor: "lightblue", margin: "1em auto", width: "40%"
         }}>LoginPage
@@ -44,13 +45,12 @@ const LoginPage = ({ setIsSigning, setIsLogging, setUserRole, userRole }) => {
             </div>
           </div>
         </div>
-      ) ? userRole == 1 (
-        <div>Hi</div>
-      ) : (
-        <div>Mornin</div>
-      )}
-      
-    </>
+      </>
+    ) : userRole === 1 ? (
+      <div>Hi</div>
+    ) : (
+      <div>Mornin</div>
+    )
   )
 }
 
